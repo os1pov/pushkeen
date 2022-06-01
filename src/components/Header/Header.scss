@@ -1,0 +1,45 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  background: #D7E7FF;
+
+  //disable text highlighting
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  height: 80px;
+  padding: 0 15px;
+
+  @media screen and (max-width: 900px) {
+    justify-content: flex-end;
+    height: 50px;
+    padding: 0 10px;
+  }
+}
+
+.header__logo {
+  width: 160px;
+  height: 80px;
+  background: url(https://pushkeen.ru/source/img/logo_mini.svg) no-repeat center;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}

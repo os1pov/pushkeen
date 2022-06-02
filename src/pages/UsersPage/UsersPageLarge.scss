@@ -1,0 +1,15 @@
+.users__LARGE {
+  .users__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1380px;
+
+    @media screen and (max-width: 1379px) {
+      width: 920px;
+    }
+
+    @media screen and (max-width: 919px) {
+      width: 400px;
+    }
+  }
+}

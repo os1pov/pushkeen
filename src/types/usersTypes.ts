@@ -2,7 +2,7 @@ export enum UsersActionTypes {
     SET_USER_SUCCESS = "SET_USER_SUCCESS",
     SET_USER_ERROR = "SET_USER_ERROR",
     SET_USERS_SUCCESS = "SET_USERS_SUCCESS",
-    SET_USERS_ERROR = "SET_USERS_ERROR",
+    SET_USERS_ERROR = "SET_USERS_ERROR"
 }
 
 export interface IUser {

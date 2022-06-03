@@ -53,4 +53,8 @@
   position: absolute;
   left: calc(30% - 150px + 60px);
   bottom: 10%;
+
+  @media screen and (max-width: 400px) {
+    width: 150px;
+  }
 }

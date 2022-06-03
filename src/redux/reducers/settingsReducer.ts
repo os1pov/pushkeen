@@ -14,6 +14,12 @@ export const settingsReducer = (state = initialState, action: SettingsAction): S
                 version: action.payload
             }
 
+        case SettingsActionTypes.SET_IS_LOADING:
+            return {
+                ...state,
+                isLoading: action.payload
+            }
+
         default:
             return state
     }

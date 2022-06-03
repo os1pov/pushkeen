@@ -1,0 +1,39 @@
+.post-card {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 30px;
+
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.post-card__title {
+  margin-bottom: 10px;
+
+  font-family: Stolzl;
+  font-weight: 500;
+  font-stretch: normal;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.post-card__body {
+  margin-bottom: 10px;
+
+  font-family: Stolzl;
+  font-weight: 500;
+  font-stretch: normal;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+
+  color: #BEC6DD;
+
+  @media screen and (max-width: 600px){
+    display: none;
+  }
+}

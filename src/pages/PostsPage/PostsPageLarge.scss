@@ -1,0 +1,41 @@
+.posts__LARGE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  background: #D7E7FF;
+
+  .posts__container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+
+    @media screen and (max-width: 900px) {
+      padding: 0 10px;
+    }
+  }
+
+  .posts__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0;
+
+    @media screen and (max-width: 500px){
+      flex-direction: column;
+    }
+  }
+
+  .posts__title__body {
+    margin-right: 15px;
+
+    font-family: Stolzl;
+    font-weight: 500;
+    font-stretch: normal;
+    letter-spacing: 0.05em;
+    font-size: 48px;
+
+    color: #000000;
+  }
+}

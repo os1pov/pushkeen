@@ -2,7 +2,7 @@ import React from 'react'
 import { useTypedSelector } from '../../hooks/useTypedSelector'
 import classNames from 'classnames'
 import { IUser } from '../../types/usersTypes'
-import ButtonDetail from '../ButtonDetail/ButtonDetail'
+import ButtonDetail from '../Buttons/ButtonDetail/ButtonDetail'
 import './UserCard.scss'
 import './UserCardLarge.scss'
 

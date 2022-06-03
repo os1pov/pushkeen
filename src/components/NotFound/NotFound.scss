@@ -1,0 +1,21 @@
+.not-found {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  font-family: Stolzl;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0.05em;
+  font-size: 24px;
+
+  color: #000000;
+
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
+}

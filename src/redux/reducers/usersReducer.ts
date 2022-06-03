@@ -7,6 +7,18 @@ const initialState: UsersState = {
 
 export const usersReducer = (state = initialState, action: UsersAction): UsersState => {
     switch (action.type) {
+        case UsersActionTypes.SET_USER_SUCCESS:
+            return {
+                ...state,
+                user: action.payload
+            }
+
+        case UsersActionTypes.SET_USER_ERROR:
+            return {
+                ...state,
+                user: undefined
+            }
+
         case UsersActionTypes.SET_USERS_SUCCESS:
             return {
                 ...state,

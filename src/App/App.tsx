@@ -1,27 +1,21 @@
-import React, { useEffect } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useTypedSelector } from '../hooks/useTypedSelector'
+import React from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from '../components/Header/Header'
-import Loader from '../components/Loader/Loader'
 import UsersPage from '../pages/UsersPage/UsersPage'
+import UserPage from '../pages/UserPage/UserPage'
+import PostsPage from '../pages/PostsPage/PostsPage'
 import './App.scss'
 
 const App = () => {
-    const { isLoading } = useTypedSelector(state => state.settings)
-    const navigate = useNavigate()
-
-    useEffect(() => {
-        navigate("/users")
-    },[])
-
     return (
         <div className="app">
             <Header />
-            {isLoading ? <Loader /> :
-                <Routes>
-                    <Route path='/users' element={<UsersPage />} />
-                </Routes>
-            }
+            <Routes>
+                <Route path="/" element={<Navigate to="/users" />} />
+                <Route path='/users' element={<UsersPage />} />
+                <Route path='/user/:id' element={<UserPage />} />
+                <Route path='/user/:id/posts' element={<PostsPage />} />
+            </Routes>
         </div>
     )
 }

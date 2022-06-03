@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTypedSelector } from '../../hooks/useTypedSelector'
+import { useTypedSelector } from '../../../hooks/useTypedSelector'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 import './ButtonDetail.scss'

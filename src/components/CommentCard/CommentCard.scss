@@ -1,0 +1,28 @@
+.comment-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.comment-card__email {
+  margin-right: 10px;
+  font-family: Stolzl;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  color: #000000;
+}
+
+.comment-card__body {
+  font-family: Stolzl;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+
+  -webkit-text-stroke: 1px #000000;
+
+  color: #BEC6DD;
+}

@@ -3,11 +3,13 @@ import thunk from 'redux-thunk'
 import { settingsReducer } from './reducers/settingsReducer'
 import { usersReducer } from './reducers/usersReducer'
 import { postsReducer } from './reducers/postsReducer'
+import { commentsReducer } from './reducers/commentsReducer'
 
 const rootReducer = combineReducers({
     settings: settingsReducer,
     users: usersReducer,
-    posts: postsReducer
+    posts: postsReducer,
+    comments: commentsReducer
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))
